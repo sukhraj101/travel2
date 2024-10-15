@@ -14,59 +14,82 @@ export default function TourSingle() {
                 </ol>
             </nav>
         </div>
-        <div className="mb-4 mb-lg-8">
-            <img className="img-fluid w-100" src="https://transvelo.github.io/mytravel-html/assets/img/1920x600/img4.jpg" alt="Image" />
+        <div className="mb-4 mb-lg-4">
+            <img className="img-fluid w-100" src="https://transvelo.github.io/mytravel-html/assets/img/1920x500/img6.jpg" alt="Image" />
             <div className="container">
                 <div className="position-relative">
-                <div className="position-absolute right-0 mt-md-n11 mt-n9">
-                    <div className="flex-horizontal-center">
-                    <a
-                        className="js-fancybox btn btn-white transition-3d-hover py-2 px-md-5 px-3 shadow-6 mr-1"
-                        href="javascript:;"
-                        data-src="//www.youtube.com/watch?v=Vfk5VuUpJ-o"
-                        data-speed="700"
-                    >
-                        <i className="flaticon-movie mr-md-2 font-size-18 text-primary"></i>
-                        <span className="d-none d-md-inline">Video</span>
-                    </a>
-                    <a
-                        className="js-fancybox btn btn-white transition-3d-hover ml-2 py-2 px-md-5 px-3 shadow-6"
-                        href="javascript:;"
-                        data-src="../../assets/img/960x490/img7.jpg"
-                        data-fancybox="fancyboxGallery6"
-                        data-caption="MyTravel in frames - image #01"
-                        data-speed="700"
-                    >
-                        <i className="flaticon-gallery mr-md-2 font-size-18 text-primary"></i>
-                        <span className="d-none d-md-inline">Gallery</span>
-                    </a>
-
-                    <img
-                        className="js-fancybox d-none"
-                        alt="Image Description"
-                        data-fancybox="fancyboxGallery6"
-                        data-src="../../assets/img/960x490/img6.jpg"
-                        data-caption="MyTravel in frames - image #02"
-                        data-speed="700"
-                    />
-                    <img
-                        className="js-fancybox d-none"
-                        alt="Image Description"
-                        data-caption="MyTravel in frames - image #03"
-                        data-src="../../assets/img/960x490/img8.jpg"
-                        data-fancybox="fancyboxGallery6"
-                        data-speed="700"
-                    />
-                    <img
-                        className="js-fancybox d-none"
-                        alt="Image Description"
-                        data-fancybox="fancyboxGallery6"
-                        data-src="../../assets/img/960x490/img9.jpg"
-                        data-caption="MyTravel in frames - image #04"
-                        data-speed="700"
-                    />
+                    <div className="position-absolute right-0 mt-md-n11 mt-n9">
+                        <div className="flex-horizontal-center">
+                            <a
+                                className="js-fancybox btn btn-white transition-3d-hover py-2 px-md-5 px-3 shadow-6 mr-1"
+                                href="javascript:;"
+                                data-src="//www.youtube.com/watch?v=Vfk5VuUpJ-o"
+                                data-speed="700"
+                            >
+                                <i className="flaticon-movie mr-md-2 font-size-18 text-primary"></i>
+                                <span className="d-none d-md-inline">Video</span>
+                            </a>
+                            <a
+                                className="js-fancybox btn btn-white transition-3d-hover ml-2 py-2 px-md-5 px-3 shadow-6"
+                                href="javascript:;"
+                                data-src="../../assets/img/960x490/img7.jpg"
+                                data-fancybox="fancyboxGallery6"
+                                data-caption="MyTravel in frames - image #01"
+                                data-speed="700"
+                            >
+                                <i className="flaticon-gallery mr-md-2 font-size-18 text-primary"></i>
+                                <span className="d-none d-md-inline">Gallery</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="stickyBlockStartPoint" class="mb-4">
+            <div className="container">
+                <div class="d-flex justify-content-between pr-4 align-center border rounded-pill js-sticky-block p-1 border-width-2 z-index-4 bg-white" data-parent="#stickyBlockStartPoint" data-offset-target="#logoAndNav" data-sticky-view="lg" data-start-point="#stickyBlockStartPoint" data-end-point="#stickyBlockEndPoint" data-offset-top="30" data-offset-bottom="30">
+                    <ul class="js-scroll-nav nav tab-nav-pill flex-nowrap tab-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link font-weight-medium" href="#scroll-description">
+                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span class="tabtext font-weight-semi-bold">Description</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-medium" href="#scroll-itinerary">
+                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span class="tabtext font-weight-semi-bold">Itinerary</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-medium" href="#scroll-location">
+                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span class="tabtext font-weight-semi-bold">Map</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-medium" href="#scroll-faq">
+                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span class="tabtext font-weight-semi-bold">Faq</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-medium" href="#scroll-reviews">
+                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span class="tabtext font-weight-semi-bold">Reviews</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div className="p-0">
+                        <span className="font-size-14">From</span>
+                        <span className="font-size-24 text-gray-6 font-weight-bold ml-1">£350.00</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -711,12 +734,12 @@ export default function TourSingle() {
                 <div className="col-lg-4 col-xl-3">
   <div className="mb-4">
     <div className="border border-color-7 rounded mb-5">
-      <div className="border-bottom">
+      {/* <div className="border-bottom">
         <div className="p-4">
           <span className="font-size-14">From</span>
           <span className="font-size-24 text-gray-6 font-weight-bold ml-1">£350.00</span>
         </div>
-      </div>
+      </div> */}
       <div className="p-4">
         {/* Input */}
         <span className="d-block text-gray-1 font-weight-normal mb-0 text-left">Date</span>

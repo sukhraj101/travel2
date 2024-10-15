@@ -147,3 +147,56 @@
 .booking-accordion .accordion-body {
     border-bottom: 1px solid #e7eaf3;
 }
+
+.tour-listing-tabs {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.tour-listing-tabs li {
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+.tour-listing-tabs li span {
+    display: inline-block;
+    margin-left: 10px;
+}
+.tour-listing-tabs li.active {
+    color: #297cbb;
+    border-color: #297cbb;
+}
+.tour-listing-tabs li:hover {
+    color: #297cbb;
+    border-color: #297cbb;
+}
+.has-abs-btn {
+    position: relative;
+}
+.has-abs-btn button {
+    color: #ffffff;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    border: 0px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #474747;
+    transform: translateY(-50%);
+}
+#stickyBlockStartPoint {
+    top: 10px;
+    position: sticky;
+    background-color: #ffffff;
+    z-index: 101;
+}

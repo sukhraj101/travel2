@@ -914,7 +914,7 @@ export default function MapListing() {
                                                         <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
-                                                            </ul>
+                                                    </ul>
                                                     <ul className="list-unstyled d-md-flex">
                                                         <li className="border border-green bg-green rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14 text-white">Lowest price includes</span>

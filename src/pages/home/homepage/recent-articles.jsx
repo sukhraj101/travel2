@@ -29,7 +29,7 @@ const RecentArticles = () => {
     <div className="recent-article-block recent-article-v1">
       <div className="container space-1 mt-3 mb-lg-4">
         <div className="w-md-80 w-lg-50 text-center mx-md-auto mb-5">
-          <h2 className="section-title text-black font-size-30 font-weight-bold mb-0">Recent Article</h2>
+          <h2 className="section-title text-black font-size-30 font-weight-bold mb-0">Recent Blog Article</h2>
         </div>
         <div className="row">
           {articles.map((article) => (

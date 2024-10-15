@@ -335,7 +335,7 @@ const Footer = () => {
                     type="submit"
                     id="subscribeButtonExample3"
                   >
-                    Subscribes
+                    Subscribe
                   </button>
                 </div>
               </div>

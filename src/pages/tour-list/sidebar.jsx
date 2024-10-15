@@ -11,6 +11,11 @@ function Sidebar() {
             </button>
             <div id="sidebar" className="collapse navbar-collapse">
                 <div className="mb-6 w-100">
+                    <div className="mb-5 border border-color-3">
+                        <a href="/map-listing" className="d-block border border-color-1 rounded-xs">
+                            <img src="../../assets/img/map-markers/map.jpg" alt="" width="100%"/>
+                        </a>
+                    </div>
                     <div className="pb-4 mb-2">
                         <div className="sidebar border border-color-1 rounded-xs">
                             <div className="p-4 mx-1 mb-1">
@@ -55,12 +60,6 @@ function Sidebar() {
                             </div>
                         </div>
                     </div>
-                    <div className="pb-4 mb-2">
-                        <a href="/map-listing" className="d-block border border-color-1 rounded-xs">
-                            <img src="../../assets/img/map-markers/map.jpg" alt="" width="100%"/>
-                        </a>
-                    </div>
-
                     <div className="sidenav border border-color-8 rounded-xs">
                         <div id="shopRatingAccordion" className="accordion rounded-0 shadow-none border-bottom">
                             <div className="border-0">
