@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../../../components/footer/Footer'
 import Header from '../../../components/header/Header'
+import imageLost from "./../../../../public/assets/svg/404.svg"
 
 export default function NotFound() {
   return (
@@ -20,7 +21,7 @@ export default function NotFound() {
                         </div>
                         <div className="col-lg-7 col-xl-8dot5">
                             <div className="space-lg-2 space-xl-3 mt-lg-5 mt-xl-7 mb-xl-4">
-                                <img src="./public/assets/svg/404.svg" alt="Image-Description" />
+                                <img src={imageLost} alt="Image-Description" />
                             </div>
                         </div>
                     </div>
