@@ -1,0 +1,149 @@
+#shoppingCartDropdown {
+    display: none;
+}
+.footer-dropdown-select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    display: inline-block;
+    font-weight: 500;
+    color: #3b444f;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid #ebf0f7;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3125rem !important;
+    transition: all 0.2s ease-in-out;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+    background-position-x: 95%;
+    background-size: 12px;
+    cursor: pointer;
+}
+.swiper-horizontal {
+    padding-right: 80px !important;
+}
+.swiper-btn {
+    line-height: 0 !important;
+    color: #297cbb !important;
+    background-color: #ebf0f7 !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 0.875rem !important;
+    cursor: pointer !important;
+    transition: 0.3s ease-in-out !important;
+    top: 50% !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+}
+.swiper-button-disabled {
+    color: #b9b9b9 !important;
+    background-color: #ebf0f7 !important;
+}
+.swiper-btn:hover {
+    color: #ffffff !important;
+    background-color: #297cbb !important;
+}
+.swiper-btn.swiper-button-prev:after, .swiper-btn.swiper-button-next:after {
+    font-size: inherit;
+}
+.swiper-btn.swiper-button-prev {
+    left: -60px;
+}
+.swiper-btn.swiper-button-next {
+    right: -60px;
+}
+.rmdp-container {
+    width: 100%;
+    display: block;
+}
+.rmdp-input {
+    display: block;
+    width: 100%;
+    font-size: 0.925rem !important;
+    height: calc(1.5em + 2.1rem) !important;
+    padding: 0.9rem 1rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3b444f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ebf0f7 !important;
+    border-radius: 0.3125rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.destionation-dropdown {
+    display: flex;
+    width: 360px;
+    border: 2px solid #ebf0f7;
+    border-right: 0px;
+    border-top-left-radius: 0.3125rem !important;
+    border-bottom-left-radius: 0.3125rem !important;
+}
+.destionation-dropdown .dropdown-menu {
+    box-shadow: 0 5px 20px rgb(9 9 10 / 16%), 0 5px 9px rgb(25 27 30 / 5%);
+}
+.destionation-dropdown .form-control {
+    border-radius: 0px;
+    border: 0px;
+}
+.destionation-dropdown .btn-destination {
+    cursor: pointer !important;
+    pointer-events: all;
+    color: #777777;
+    border: 0px;
+    border-radius: 0px;
+    border-left: 1px solid #eeeeee;
+    background-color: #f8fafd;
+}
+.destionation-dropdown .bs-searchbox .form-control {
+    border: 2px solid #ebf0f7;
+}
+.destionation-dropdown + .form-control {
+    margin-left: 0px !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.destionation-dropdown .inner {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.destionation-dropdown .inner li {
+    cursor: pointer;
+}
+.destionation-dropdown .inner li:hover {
+    color: #297cbb;
+}
+.booking-accordion .card-btn {
+    margin-bottom: 0px;
+}
+.booking-accordion .accordion-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #3b444f;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3125rem;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid #e7eaf3;
+}
+.booking-accordion .accordion-body {
+    border-bottom: 1px solid #e7eaf3;
+}
