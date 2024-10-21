@@ -1,14 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function Navbar() {
   const [activeMenu, setActiveMenu] = useState(null);
+  const navbarRef = useRef(null);
 
   const handleMenuClick = (menuId) => {
     setActiveMenu((prevMenu) => (prevMenu === menuId ? null : menuId));
   };
 
+  const handleClickOutside = (event) => {
+    if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+      setActiveMenu(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div id="navBar" className="navbar-collapse u-header__navbar-collapse u-header-left-aligned-nav collapse order-2 order-xl-0 pt-4 pt-xl-0 pl-xl-6">
+    <div
+      id="navBar"
+      className="navbar-collapse u-header__navbar-collapse u-header-left-aligned-nav collapse order-2 order-xl-0 pt-4 pt-xl-0 pl-xl-6"
+      ref={navbarRef}
+    >
       <ul className="navbar-nav u-header__navbar-nav">
         <li className="nav-item u-header__nav-item">
           <a

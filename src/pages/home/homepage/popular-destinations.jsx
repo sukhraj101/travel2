@@ -79,11 +79,9 @@ const PopularDestinations = () => (
                       {destination.country}
                     </a>
                   </div>
-                  <div className="d-inline-flex px-3 py-1 rounded-pill bg-white">
-                    <a href={destination.tourLink} className="font-size-14">
+                    <a href={destination.tourLink} className="font-size-14 d-inline-flex px-3 py-1 rounded-pill">
                       {destination.tours} Tour{destination.tours > 1 ? 's' : ''}
                     </a>
-                  </div>
                 </div>
               </header>
             </div>

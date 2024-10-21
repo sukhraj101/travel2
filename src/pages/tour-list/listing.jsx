@@ -32,7 +32,8 @@ export default function Listing() {
       <div className="tab-content" id="pills-tabContent">
         <div className="tab-pane fade show active" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab" data-target-group="groups">
           <ul className="d-block list-unstyled products-group prodcut-list-view">
-            <li className="card mb-5 overflow-hidden">
+            <li className="card mb-3 overflow-hidden">
+              <a href="/tour-single">
               <div className="product-item__outer w-100">
                 <div className="row">
                   <div className="col-md-5 col-xl-4">
@@ -65,13 +66,13 @@ export default function Listing() {
                         <span className="font-weight-bold font-size-17 text-dark d-flex mb-1">Stonehenge, Windsor Castle, and Bath from London</span>
                       </a>
                       <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                             <span className="font-weight-normal font-size-14">Breakfast</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                         </li>
                       </ul>
@@ -99,16 +100,15 @@ export default function Listing() {
                             <span className="font-weight-bold font-size-22">$350.00</span>
                           </div>
                         </div>
-                        <div className="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
-                          <a href="/tour-single" className="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">Book Now</a>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
             </li>
-            <li className="card mb-5 overflow-hidden">
+            <li className="card mb-3 overflow-hidden">
+              <a href="/tour-single">
               <div className="product-item__outer w-100">
                 <div className="row">
                   <div className="col-md-5 col-xl-4">
@@ -141,13 +141,13 @@ export default function Listing() {
                         <span className="font-weight-bold font-size-17 text-dark d-flex mb-1">Bosphorus Strait and Black Sea Half-Day Cruise from Istanbul</span>
                       </a>
                       <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                             <span className="font-weight-normal font-size-14">Breakfast</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                         </li>
                       </ul>
@@ -175,16 +175,15 @@ export default function Listing() {
                             <span className="font-weight-bold font-size-22">$350.00</span>
                           </div>
                         </div>
-                        <div className="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
-                          <a href="/tour-single" className="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">Book Now</a>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
             </li>
-            <li className="card mb-5 overflow-hidden">
+            <li className="card mb-3 overflow-hidden">
+              <a href="/tour-single">
               <div className="product-item__outer w-100">
                 <div className="row align-items-center">
                   <div className="col-md-5 col-xl-4">
@@ -217,13 +216,13 @@ export default function Listing() {
                         <span className="font-weight-bold font-size-17 text-dark d-flex mb-1">Two Capitals Tour of 7 days and 6 nights From Moscow</span>
                       </a>
                       <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                             <span className="font-weight-normal font-size-14">Breakfast</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                         </li>
                       </ul>
@@ -251,16 +250,15 @@ export default function Listing() {
                             <span className="font-weight-bold font-size-22">$350.00</span>
                           </div>
                         </div>
-                        <div className="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
-                          <a href="/tour-single" className="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">Book Now</a>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
             </li>
-            <li className="card mb-5 overflow-hidden">
+            <li className="card mb-3 overflow-hidden">
+              <a href="/tour-single">
               <div className="product-item__outer w-100">
                 <div className="row align-items-center">
                   <div className="col-md-5 col-xl-4">
@@ -293,13 +291,13 @@ export default function Listing() {
                         <span className="font-weight-bold font-size-17 text-dark d-flex mb-1">Two Small-Group Blue Mountains Day Trip from Sydney with River Cruise</span>
                       </a>
                       <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                             <span className="font-weight-normal font-size-14">Breakfast</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                         </li>
                       </ul>
@@ -327,16 +325,15 @@ export default function Listing() {
                             <span className="font-weight-bold font-size-22">$350.00</span>
                           </div>
                         </div>
-                        <div className="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
-                          <a href="/tour-single" className="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">Book Now</a>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
             </li>
-            <li className="card mb-5 overflow-hidden">
+            <li className="card mb-3 overflow-hidden">
+              <a href="/tour-single">
               <div className="product-item__outer w-100">
                 <div className="row align-items-center">
                   <div className="col-md-5 col-xl-4">
@@ -369,13 +366,13 @@ export default function Listing() {
                         <span className="font-weight-bold font-size-17 text-dark d-flex mb-1">Bosphorus Strait and Black Sea Half-Day Cruise from Istanbul</span>
                       </a>
                       <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                             <span className="font-weight-normal font-size-14">Breakfast</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                         </li>
-                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                         </li>
                       </ul>
@@ -403,14 +400,12 @@ export default function Listing() {
                             <span className="font-weight-bold font-size-22">$350.00</span>
                           </div>
                         </div>
-                        <div className="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
-                          <a href="/tour-single" className="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">Book Now</a>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </a>
             </li>
           </ul>
         </div>

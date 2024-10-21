@@ -1,9 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react';
 import PopularTours from "./../home/homepage/popular-tours";
+import img1 from "./../../../public/assets/img/single/1.jpg"
+import img2 from "./../../../public/assets/img/single/2.jpg"
+import img3 from "./../../../public/assets/img/single/3.jpg"
+import img4 from "./../../../public/assets/img/single/4.jpg"
+import img5 from "./../../../public/assets/img/single/5.jpg"
+import img6 from "./../../../public/assets/img/single/6.jpg"
+import img7 from "./../../../public/assets/img/single/7.jpg"
+import ImageGridPopup from './gallery';
 
 export default function TourSingle() {
+    const [showModal, setShowModal] = useState(false);
+    const images = [
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402154436.jpg?k=a5845240f4f8bc63730f3f7c9596ac127940b201058df43e144bc5d71384cf55&o=&hp=1',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/402349154.jpg?k=8eafce34c5be047bbfc6ce48bc5819d2a3c69dd738888ee21366639f4b600b66&o=',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402154459.jpg?k=6af9435f877d0b3e58a85160bbb4607e15f967c4d56cf0a4e9df6add3750bd88&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402156881.jpg?k=4b5a214b0d4f99776a44aff2d8a6ad0bab39d053a2b1525db8bb445fab5da1e7&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402156885.jpg?k=e29f9eace0ab1c6dce025cfe4acd5371a1905c5e97296b14d82541b7ecdb9394&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402349147.jpg?k=1d1f9dbc94e02fc2a0b2f99ac06ffbd62ec8e258d317ed04581be0fbf05c6118&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/405182515.jpg?k=13e9b4c145ff4cbc2cae4d3cba722ab79b0c6f954f96811c04c63a45e0b45218&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041654.jpg?k=32a913e66da1d47cde8a2b97a61defed6ddb0af22e94cc2f92e4bc6a7eafb939&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041701.jpg?k=c3f48264c003ac46b6948f2e86e96158538d68cff1e1804e436144fd2945547f&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041709.jpg?k=0beaadb06b96c0ca799476f609c7ffe3d15877911728e520aa6d8c3104e7b23f&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/429169155.jpg?k=1a0bd1205e402005840b46609df8f3783134353352a2af9daa8d351b43b10bd6&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041738.jpg?k=395098f64e2a68881736f543d3b9cd68f0067c439effaeeeb75c62efb1d98482&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402154436.jpg?k=a5845240f4f8bc63730f3f7c9596ac127940b201058df43e144bc5d71384cf55&o=&hp=1',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/402349154.jpg?k=8eafce34c5be047bbfc6ce48bc5819d2a3c69dd738888ee21366639f4b600b66&o=',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402154459.jpg?k=6af9435f877d0b3e58a85160bbb4607e15f967c4d56cf0a4e9df6add3750bd88&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402156881.jpg?k=4b5a214b0d4f99776a44aff2d8a6ad0bab39d053a2b1525db8bb445fab5da1e7&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402156885.jpg?k=e29f9eace0ab1c6dce025cfe4acd5371a1905c5e97296b14d82541b7ecdb9394&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/402349147.jpg?k=1d1f9dbc94e02fc2a0b2f99ac06ffbd62ec8e258d317ed04581be0fbf05c6118&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/405182515.jpg?k=13e9b4c145ff4cbc2cae4d3cba722ab79b0c6f954f96811c04c63a45e0b45218&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041654.jpg?k=32a913e66da1d47cde8a2b97a61defed6ddb0af22e94cc2f92e4bc6a7eafb939&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041701.jpg?k=c3f48264c003ac46b6948f2e86e96158538d68cff1e1804e436144fd2945547f&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041709.jpg?k=0beaadb06b96c0ca799476f609c7ffe3d15877911728e520aa6d8c3104e7b23f&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/429169155.jpg?k=1a0bd1205e402005840b46609df8f3783134353352a2af9daa8d351b43b10bd6&o=&hp=1',
+        'https://cf2.bstatic.com/xdata/images/hotel/max1024x768/406041738.jpg?k=395098f64e2a68881736f543d3b9cd68f0067c439effaeeeb75c62efb1d98482&o=&hp=1',
+    ];
+
+    const handleOpenModal = () => setShowModal(true);
+    const handleCloseModal = () => setShowModal(false);
+    const handleBack = () => console.log('Back button clicked');
+
   return (
     <>
+        <ImageGridPopup
+            show={showModal}
+            handleCloseModal={handleCloseModal}
+            images={images}
+            onBack={handleBack}
+        />
+        
         <div className="container">
             <nav className="py-3" aria-label="breadcrumb">
                 <ol className="breadcrumb breadcrumb-no-gutter mb-0 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visible">
@@ -14,74 +61,42 @@ export default function TourSingle() {
                 </ol>
             </nav>
         </div>
-        <div className="mb-4 mb-lg-4">
-            <img className="img-fluid w-100" src="https://transvelo.github.io/mytravel-html/assets/img/1920x500/img6.jpg" alt="Image" />
+        <div id="stickyBlockStartPoint" className="mb-4">
             <div className="container">
-                <div className="position-relative">
-                    <div className="position-absolute right-0 mt-md-n11 mt-n9">
-                        <div className="flex-horizontal-center">
-                            <a
-                                className="js-fancybox btn btn-white transition-3d-hover py-2 px-md-5 px-3 shadow-6 mr-1"
-                                href="javascript:;"
-                                data-src="//www.youtube.com/watch?v=Vfk5VuUpJ-o"
-                                data-speed="700"
-                            >
-                                <i className="flaticon-movie mr-md-2 font-size-18 text-primary"></i>
-                                <span className="d-none d-md-inline">Video</span>
-                            </a>
-                            <a
-                                className="js-fancybox btn btn-white transition-3d-hover ml-2 py-2 px-md-5 px-3 shadow-6"
-                                href="javascript:;"
-                                data-src="../../assets/img/960x490/img7.jpg"
-                                data-fancybox="fancyboxGallery6"
-                                data-caption="MyTravel in frames - image #01"
-                                data-speed="700"
-                            >
-                                <i className="flaticon-gallery mr-md-2 font-size-18 text-primary"></i>
-                                <span className="d-none d-md-inline">Gallery</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="stickyBlockStartPoint" class="mb-4">
-            <div className="container">
-                <div class="d-flex justify-content-between pr-4 align-center border rounded-pill js-sticky-block p-1 border-width-2 z-index-4 bg-white" data-parent="#stickyBlockStartPoint" data-offset-target="#logoAndNav" data-sticky-view="lg" data-start-point="#stickyBlockStartPoint" data-end-point="#stickyBlockEndPoint" data-offset-top="30" data-offset-bottom="30">
-                    <ul class="js-scroll-nav nav tab-nav-pill flex-nowrap tab-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link font-weight-medium" href="#scroll-description">
-                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
-                                    <span class="tabtext font-weight-semi-bold">Description</span>
+                <div className="d-flex justify-content-between pr-4 align-center border rounded-pill js-sticky-block p-1 border-width-2 z-index-4 bg-white" data-parent="#stickyBlockStartPoint" data-offset-target="#logoAndNav" data-sticky-view="lg" data-start-point="#stickyBlockStartPoint" data-end-point="#stickyBlockEndPoint" data-offset-top="30" data-offset-bottom="30">
+                    <ul className="js-scroll-nav nav tab-nav-pill flex-nowrap tab-nav">
+                        <li className="nav-item active">
+                            <a className="nav-link font-weight-medium" href="#scroll-description">
+                                <div className="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span className="tabtext font-weight-semi-bold">Description</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-weight-medium" href="#scroll-itinerary">
-                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
-                                    <span class="tabtext font-weight-semi-bold">Itinerary</span>
+                        <li className="nav-item">
+                            <a className="nav-link font-weight-medium" href="#scroll-itinerary">
+                                <div className="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span className="tabtext font-weight-semi-bold">Itinerary</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-weight-medium" href="#scroll-location">
-                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
-                                    <span class="tabtext font-weight-semi-bold">Map</span>
+                        <li className="nav-item">
+                            <a className="nav-link font-weight-medium" href="#scroll-location">
+                                <div className="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span className="tabtext font-weight-semi-bold">Map</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-weight-medium" href="#scroll-faq">
-                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
-                                    <span class="tabtext font-weight-semi-bold">Faq</span>
+                        <li className="nav-item">
+                            <a className="nav-link font-weight-medium" href="#scroll-faq">
+                                <div className="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span className="tabtext font-weight-semi-bold">Faq</span>
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-weight-medium" href="#scroll-reviews">
-                                <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
-                                    <span class="tabtext font-weight-semi-bold">Reviews</span>
+                        <li className="nav-item">
+                            <a className="nav-link font-weight-medium" href="#scroll-reviews">
+                                <div className="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+                                    <span className="tabtext font-weight-semi-bold">Reviews</span>
                                 </div>
                             </a>
                         </li>
@@ -140,6 +155,30 @@ export default function TourSingle() {
                         </a>
                         </li>
                     </ul>
+                    </div>
+                    <div className="images-gal">
+                        <div className="div1">
+                            <img src={img1} alt="" />
+                        </div>
+                        <div className="div2">
+                            <img src={img2} alt="" />
+                        </div>
+                        <div className="div3">
+                            <img src={img3} alt="" />
+                        </div>
+                        <div className="div4">
+                            <img src={img4} alt="" />
+                        </div>
+                        <div className="div5">
+                            <img src={img5} alt="" />
+                        </div>
+                        <div className="div6">
+                            <img src={img6} alt="" />
+                        </div>
+                        <div className="div7" onClick={handleOpenModal}>
+                            <img src={img7} alt="" />
+                            <span class="view-all-photos">+37 photos</span>
+                        </div>
                     </div>
                     <div className="py-4 border-top border-bottom mb-4">
                         <ul className="list-group list-group-borderless list-group-horizontal row">
@@ -732,6 +771,27 @@ export default function TourSingle() {
                     </div>
                 </div>
                 <div className="col-lg-4 col-xl-3">
+                <div className="mb-4 border">
+                        <a href="/map-listing" className="border border-color-1 rounded-xs c75185f3e8-map">
+                            <div className='c75185f3e8-wrap'>
+                                <div className="c75185f3e8">
+                                    <span className="d0438f59a5" data-testid="map-entry-pin-icon">
+                                        <span className="e75db87696">
+                                            <span className="b56c581c9f"></span>
+                                            <svg viewBox="-1 -1 26 32" className="b2873bf9cb">
+                                                <path d="M24 12.4286C24 19.2927 12 29 12 29C12 29 0 19.2927 0 12.4286C0 5.56446 5.37258 0 12 0C18.6274 0 24 5.56446 24 12.4286Z"></path>
+                                            </svg>
+                                        </span>
+                                        <svg className="ae0a00836a" viewBox="0 0 12 4">
+                                            <ellipse cx="6" cy="2" rx="6" ry="2"></ellipse>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm transition-3d-hover w-md-auto mt-3">Show on map</button>
+                            </div>
+                            <img src="../../assets/img/map-markers/map-photo.png" alt="" width="100%"/>
+                        </a>
+                    </div>
   <div className="mb-4">
     <div className="border border-color-7 rounded mb-5">
       {/* <div className="border-bottom">

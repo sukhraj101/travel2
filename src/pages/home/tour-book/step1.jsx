@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
+import GoodToKnow from './good-to-know';
 
 export default function Step1() {
+    const [isBookingForSomeoneElse, setIsBookingForSomeoneElse] = useState(false);
+
+    const handleRadioChange = (event) => {
+        setIsBookingForSomeoneElse(event.target.value === 'true');
+    };
   return (
     <>
         <div className="mb-5 shadow-soft bg-white rounded-sm">
@@ -44,8 +51,8 @@ export default function Step1() {
                         aria-label="Ali"
                         required
                         data-msg="Please enter your first name."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                         />
                     </div>
                     </div>
@@ -60,8 +67,8 @@ export default function Step1() {
                         aria-label="TUFAN"
                         required
                         data-msg="Please enter your last name."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                         />
                     </div>
                     </div>
@@ -76,8 +83,8 @@ export default function Step1() {
                         aria-label="creativelayers088@gmail.com"
                         required
                         data-msg="Please enter a valid email address."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                         />
                     </div>
                     </div>
@@ -92,8 +99,8 @@ export default function Step1() {
                         aria-label="+90 (254) 458 96 32"
                         required
                         data-msg="Please enter a valid phone number."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                         />
                     </div>
                     </div>
@@ -104,8 +111,8 @@ export default function Step1() {
                             className="form-control dropdown-select"
                             required
                             data-msg="Please select country."
-                            data-error-class="u-has-error"
-                            data-success-class="u-has-success"
+                            data-error-className="u-has-error"
+                            data-success-className="u-has-success"
                             data-live-search="true"
                             data-style="form-control font-size-16 border-width-2 border-gray font-weight-normal"
                         >
@@ -369,8 +376,8 @@ export default function Step1() {
                             className="form-control dropdown-select"
                             required
                             data-msg="Please select city."
-                            data-error-class="u-has-error"
-                            data-success-class="u-has-success"
+                            data-error-className="u-has-error"
+                            data-success-className="u-has-success"
                             data-live-search="true"
                             data-style="form-control font-size-16 border-width-2 border-gray font-weight-normal"
                         >
@@ -637,35 +644,64 @@ export default function Step1() {
                             name="text"
                             required
                             data-msg="Please enter a reason."
-                            data-error-class="u-has-error"
-                            data-success-class="u-has-success"
+                            data-error-className="u-has-error"
+                            data-success-className="u-has-success"
                         />
                         </div>
                     </div>
                     </div>
                     <div className="col-sm-6 mb-10">
-                    <div className="js-form-message">
-                        <h5 id="scroll-description" className="font-size-21 font-weight-bold text-dark mb-2">
-                        Let us know
-                        </h5>
-                        <p className="font-size-14 gray-1">We'll let the property or host know when to expect you.</p>
-                        <select
-                            className="form-control dropdown-select"
-                            required
-                            data-msg="Please select country."
-                            data-error-class="u-has-error"
-                            data-success-class="u-has-success"
-                            data-style="form-control font-size-16 border-width-2 border-gray font-weight-normal"
-                        >
-                            <option value="One" selected>
-                            I don’t know
-                            </option>
-                            <option value="Two">I will tell later</option>
-                            <option value="Three">I don’t know</option>
-                            <option value="Four">I don’t know</option>
-                        </select>
+                        <div className="js-form-message">
+                            <h5 className="font-size-18 font-weight-bold text-dark mb-2">Who are you booking for?</h5>
+                            <Form id="mfeBookForm">
+                                <Form.Group>
+                                    <Form.Check 
+                                        type="radio"
+                                        id="mainGuest"
+                                        name="notstayer"
+                                        value="false"
+                                        label="I'm the main guest"
+                                        defaultChecked
+                                        onChange={handleRadioChange}
+                                    />
+                                    <Form.Check 
+                                        type="radio"
+                                        id="bookingForSomeoneElse"
+                                        name="notstayer"
+                                        value="true"
+                                        label="I'm booking for someone else"
+                                        onChange={handleRadioChange}
+                                    />
+                                    {isBookingForSomeoneElse && (
+                                        <Form.Group className='mt-2'>
+                                            <Form.Label>Enter Guest Name:</Form.Label>
+                                            <Form.Control type="text" placeholder="Enter name" />
+                                        </Form.Group>
+                                    )}
+                                </Form.Group>
+                            </Form>
+                            <h5 className="font-size-18 font-weight-bold text-dark mb-2 mt-5">Are you traveling for work?</h5>
+                            <Form id="mfeBookForm">
+                                <Form.Group>
+                                    <Form.Check 
+                                        type="radio"
+                                        id="mainGuest"
+                                        name="notstayer"
+                                        value="false"
+                                        label="Yes"
+                                    />
+                                    <Form.Check 
+                                        type="radio"
+                                        id="bookingForSomeoneElse"
+                                        name="notstayer"
+                                        value="true"
+                                        label="No"
+                                    />
+                                </Form.Group>
+                            </Form>
+                        </div>
                     </div>
-                    </div>
+
                     <div className="col-sm-6 align-self-end">
                         <div className="text-right">
                             {/* <button type="submit" className="btn btn-primary btn-wide rounded-sm transition-3d-hover font-size-16 font-weight-bold py-3">
@@ -676,6 +712,9 @@ export default function Step1() {
                             </Link>
                         </div>
                     </div>
+
+                    <GoodToKnow />
+
                 </div>
                 </form>
             </div>

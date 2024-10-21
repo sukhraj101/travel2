@@ -1,0 +1,24 @@
+.modal-fullscreen {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margin */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+}
+.modal-fullscreen .modal-dialog {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0px !important;
+    height: 100%;
+    background-color: #ffffff;
+}
+.modal-fullscreen .modal-dialog .modal-content {
+    border: 0px !important;
+}
+.modal-fullscreen .list-group-flush .list-group-item {
+    padding-inline: 20px;
+}

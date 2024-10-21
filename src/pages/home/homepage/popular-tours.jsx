@@ -9,7 +9,7 @@ const slidesData = [
       id: 1,
       url: "../tour/tour-single-v1.html",
       image: "https://transvelo.github.io/mytravel-html/assets/img/300x230/img1.jpg",
-      title: "Small-Group Blue Mountains Day Trip from Sydney with River Cruise",
+      title: "Small-Group Blue Mountains Day Trip from Sydney",
       category: "Culturals Tours",
       price: "£550.00",
       location: "Istanbul, Turkey",
@@ -75,10 +75,6 @@ const PopularTours = () => {
             modules={[Navigation, Autoplay]} 
             spaceBetween={16}
             slidesPerView={2}
-            autoplay={{
-                delay: 7000,
-                disableOnInteraction: false
-            }}
             navigation={{
                 nextEl: '#swiper-popular-next',
                 prevEl: '#swiper-popular-prev',
@@ -94,7 +90,7 @@ const PopularTours = () => {
                 },
             }}
             speed={1500}
-            className="mySwiper"
+            className="popularSwiper"
         >
             {slidesData.map(slide => (
                 <SwiperSlide key={slide.id}>

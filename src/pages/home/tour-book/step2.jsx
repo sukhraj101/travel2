@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import PaymentCards from './cards';
 
 export default function Step2() {
   return (
@@ -8,10 +9,10 @@ export default function Step2() {
             <div className="py-3 px-4 px-xl-12 border-bottom">
                 <ul className="list-group flex-nowrap overflow-auto overflow-md-visible list-group-horizontal list-group-borderless flex-center-between pt-1">
                     <li className="list-group-item text-center flex-shrink-0 flex-xl-shrink-1">
-                        <div className="flex-content-center mb-3 width-40 height-40 border border-width-2 border-gray mx-auto rounded-circle">
-                            1
+                        <div className="flex-content-center mb-3 width-40 height-40 border bg-primary border-width-2 border-primary text-white mx-auto rounded-circle">
+                            ✓
                         </div>
-                        <div className="text-gray-1">Customer information</div>
+                        <div className="text-primary">Customer information</div>
                     </li>
                     <li className="list-group-item text-center flex-shrink-0 flex-xl-shrink-1">
                         <div className="flex-content-center mb-3 width-40 height-40 bg-primary border-width-2 border border-primary text-white mx-auto rounded-circle">
@@ -31,30 +32,7 @@ export default function Step2() {
                 <h5 id="scroll-description" className="font-size-21 font-weight-bold text-dark mb-4">
                     Your Card Information
                 </h5>
-                <ul className="nav nav-classic nav-choose border-0 nav-justified border mx-n3" role="tablist">
-                    <li className="nav-item mx-3 mb-4 mb-md-0">
-                        <a className="rounded py-5 border-width-2 border nav-link font-weight-medium active" id="pills-one-example2-tab" data-toggle="pill" href="#pills-one-example2" role="tab" aria-controls="pills-one-example2" aria-selected="true">
-                            <div className="height-25 width-25 flex-content-center bg-primary rounded-circle position-absolute left-0 top-0 ml-2 mt-2">
-                                <i className="flaticon-tick text-white font-size-15"></i>
-                            </div>
-                            <div className="d-md-flex justify-content-md-center align-items-md-center flex-wrap">
-                                <img className="img-fluid mb-3" src="../../assets/img/199x35/img1.jpg" alt="Payment with credit card" />
-                                <div className="w-100 text-dark">Payment with credit card</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li className="nav-item mx-3">
-                        <a className="rounded py-5 border-width-2 border nav-link font-weight-medium" id="pills-two-example2-tab" data-toggle="pill" href="#pills-two-example2" role="tab" aria-controls="pills-two-example2" aria-selected="false">
-                            <div className="height-25 width-25 flex-content-center bg-primary rounded-circle position-absolute left-0 top-0 ml-2 mt-2">
-                                <i className="flaticon-tick text-white font-size-15"></i>
-                            </div>
-                            <div className="d-md-flex justify-content-md-center align-items-md-center flex-wrap">
-                                <img className="img-fluid mb-3" src="../../assets/img/199x35/img2.jpg" alt="Payment with PayPal" />
-                                <div className="w-100 text-dark">Payment with PayPal</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <PaymentCards />
                 <div className="tab-content">
                     <div className="tab-pane fade pt-8 show active" id="pills-one-example2" role="tabpanel" aria-labelledby="pills-one-example2-tab">
                         <form className="js-validate" noValidate>
@@ -62,13 +40,13 @@ export default function Step2() {
                                 <div className="col-sm-6 mb-4">
                                     <div className="js-form-message">
                                         <label className="form-label">Card Holder Name</label>
-                                        <input type="text" className="form-control" name="Cardname" required data-msg="Please enter card holder name." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                        <input type="text" className="form-control" name="Cardname" required data-msg="Please enter card holder name." data-error-className="u-has-error" data-success-className="u-has-success" />
                                     </div>
                                 </div>
                                 <div className="col-sm-6 mb-4">
                                     <div className="js-form-message">
                                         <label className="form-label">Card Number</label>
-                                        <input type="number" className="form-control" name="Cardnumber" required data-msg="Please enter card number." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                        <input type="number" className="form-control" name="Cardnumber" required data-msg="Please enter card number." data-error-className="u-has-error" data-success-className="u-has-success" />
                                     </div>
                                 </div>
                                 <div className="w-100"></div>
@@ -77,13 +55,13 @@ export default function Step2() {
                                         <div className="col-sm-6 mb-4 mb-md-0">
                                             <div className="js-form-message">
                                                 <label className="form-label">Expiry Month</label>
-                                                <input type="number" className="form-control" name="Expirymonth" required data-msg="Please enter expiry month." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                                <input type="number" className="form-control" name="Expirymonth" required data-msg="Please enter expiry month." data-error-className="u-has-error" data-success-className="u-has-success" />
                                             </div>
                                         </div>
                                         <div className="col-sm-6">
                                             <div className="js-form-message">
                                                 <label className="form-label">Expiry Year</label>
-                                                <input type="number" className="form-control" name="Expiryyear" required data-msg="Please enter expiry year." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                                <input type="number" className="form-control" name="Expiryyear" required data-msg="Please enter expiry year." data-error-className="u-has-error" data-success-className="u-has-success" />
                                             </div>
                                         </div>
                                     </div>
@@ -91,14 +69,14 @@ export default function Step2() {
                                 <div className="col-sm-6 mb-4">
                                     <div className="js-form-message">
                                         <label className="form-label">CCV</label>
-                                        <input type="number" className="form-control" name="ccvnumber" required data-msg="Please enter ccv number." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                        <input type="number" className="form-control" name="ccvnumber" required data-msg="Please enter ccv number." data-error-className="u-has-error" data-success-className="u-has-success" />
                                     </div>
                                 </div>
                                 <div className="w-100"></div>
                                 <div className="col">
                                     <div className="js-form-message mb-5">
                                         <div className="custom-control custom-checkbox d-flex align-items-center text-muted">
-                                            <input type="checkbox" className="custom-control-input" id="termsCheckbox" name="termsCheckbox" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                            <input type="checkbox" className="custom-control-input" id="termsCheckbox" name="termsCheckbox" required data-msg="Please accept our Terms and Conditions." data-error-className="u-has-error" data-success-className="u-has-success" />
                                             <label className="custom-control-label" htmlFor="termsCheckbox">
                                                 <small>
                                                     By continuing, you agree to the <a className="link-muted" href="../pages/terms.html">Terms and Conditions</a>
@@ -126,7 +104,7 @@ export default function Step2() {
                                                     <span className="fas fa-user"></span>
                                                 </span>
                                             </div>
-                                            <input type="email" className="form-control" name="email" id="signinEmail" required data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                            <input type="email" className="form-control" name="email" id="signinEmail" required data-msg="Please enter a valid email address." data-error-className="u-has-error" data-success-className="u-has-success" />
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +117,7 @@ export default function Step2() {
                                                     <span className="fas fa-lock"></span>
                                                 </span>
                                             </div>
-                                            <input type="password" className="form-control" name="password" id="signinPassword" required data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                            <input type="password" className="form-control" name="password" id="signinPassword" required data-msg="Your password is invalid. Please try again." data-error-className="u-has-error" data-success-className="u-has-success" />
                                         </div>
                                     </div>
                                 </div>

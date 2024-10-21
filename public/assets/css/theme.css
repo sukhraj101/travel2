@@ -3015,7 +3015,7 @@ pre code {
   display: block;
   width: 100%;
   /* height: calc(1.5em + 1.8rem + 4px); */
-  padding: 0.9rem 1rem;
+  padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -41323,6 +41323,10 @@ label.btn {
 
 .max-width-810 {
   max-width: 50.625rem;
+}
+
+.max-width-1024 {
+  max-width: 65.625rem;
 }
 
 .width-260 {

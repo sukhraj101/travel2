@@ -33,9 +33,9 @@ export default function MapListing() {
         <div className="map-collapse-hidden mb-5">
             <div className="row no-gutters">
                 <div className="col-lg-7 col-xl-8 col-wd-6 order-1 order-lg-0">
-                    <div className="pt-4 px-4 pt-xl-6 px-xl-4 js-scrollbar height-100vh-main mCustomScrollbar _mCS_2 mCS-autoHide" style={{ position: 'relative', overflow: 'auto' }}>
+                    <div className="pt-4 px-4 pt-xl-4 px-xl-4 js-scrollbar height-100vh-main mCustomScrollbar _mCS_2 mCS-autoHide" style={{ position: 'relative', overflow: 'auto' }}>
                         <ul className="d-block list-unstyled products-group prodcut-list-view ">
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -90,13 +90,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -138,7 +138,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -191,13 +191,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -239,7 +239,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -293,13 +293,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -341,7 +341,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -396,13 +396,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -444,7 +444,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -497,13 +497,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -545,7 +545,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -599,13 +599,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -647,7 +647,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -702,13 +702,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -750,7 +750,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -804,13 +804,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                             </ul>
@@ -852,7 +852,7 @@ export default function MapListing() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="card mb-5 overflow-hidden">
+                            <li className="card mb-4 overflow-hidden">
                                 <div className="product-item__outer w-100">
                                     <div className="row align-items-center">
                                         <div className="col-md-5 col-xl-3dot5">
@@ -905,13 +905,13 @@ export default function MapListing() {
                                                         </div>
                                                     </a>
                                                     <ul className="list-unstyled mb-2 d-md-flex flex-lg-wrap flex-xl-nowrap">
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0">
                                                             <span className="font-weight-normal font-size-14">Breakfast</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mr-md-2 mb-2 mb-md-0 mb-lg-2 mb-xl-0 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Free Cancellation</span>
                                                         </li>
-                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                        <li className="border border-dark rounded-xs d-flex align-items-center text-lh-1 py-1 px-2 mb-2 mb-md-0">
                                                             <span className="font-weight-normal font-size-14">Pay at the hotel</span>
                                                         </li>
                                                     </ul>

@@ -59,8 +59,8 @@ const SignUpForm = () => {
                         aria-label={isSignup ? "Email" : "Email Or Username"}
                         required
                         data-msg="Please enter a valid email address."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                       />
                       <div className="input-group-append">
                         <span className="input-group-text">
@@ -84,8 +84,8 @@ const SignUpForm = () => {
                         aria-label="Password"
                         required
                         data-msg="Your password is invalid. Please try again."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"
+                        data-error-className="u-has-error"
+                        data-success-className="u-has-success"
                       />
                       <div className="input-group-prepend">
                         <span className="input-group-text">

@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './navbar'
 import SignUpForm from './signin'
+import logofivvia from "./../../../public/assets/img/logo/fivvia.png"
+import CurrencyDropdown from './currency'
 
 export default function Header() {
   return (
@@ -19,6 +21,13 @@ export default function Header() {
                             </ul>
                             <div className="ml-auto d-flex align-items-center">
                                 <ul className="list-inline mb-0 mr-2 pr-1">
+                                    <li className="list-inline-item">
+                                        <a className="btn btn-sm btn-icon btn-pill btn-soft-dark btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
+                                            <span>
+                                                <img src={logofivvia} alt="" />
+                                            </span>
+                                        </a>
+                                    </li>
                                     <li className="list-inline-item">
                                         <a className="btn btn-sm btn-icon btn-pill btn-soft-dark btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
                                         <span className="fab fa-facebook-f btn-icon__inner"></span>
@@ -40,23 +49,8 @@ export default function Header() {
                                         </a>
                                     </li>
                                 </ul>
-                                {/* <div className="position-relative px-3 u-header__topbar-divider">
-                                    <a href="#" className="d-flex align-items-center text-dark">
-                                        <i className="flaticon-user mr-2 ml-1"></i>
-                                        <span className="d-inline-block font-size-14 mr-1">Sign in or Register</span>
-                                    </a>
-                                </div> */}
                                 <SignUpForm/>
-                                <div className="position-relative pl-3 language-switcher u-header__topbar-divider">
-                                    <a id="languageDropdownInvoker" className="dropdown-nav-link dropdown-nav-link-dark dropdown-toggle d-flex align-items-center ml-1 py-2" href="javascript:;" role="button" aria-controls="languageDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#languageDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
-                                        <span className="d-inline-block">EUR</span>
-                                    </a>
-                                    <div id="languageDropdown" className="dropdown-menu dropdown-unfold dropdown-menu-right mt-0" aria-labelledby="languageDropdownInvoker">
-                                        <a className="dropdown-item" href="#">USD</a>
-                                        <a className="dropdown-item active" href="#">EUR</a>
-                                        <a className="dropdown-item" href="#">TUR</a>
-                                    </div>
-                                </div>
+                                <CurrencyDropdown />
                             </div>
                         </div>
                     </div>

@@ -12,9 +12,9 @@ export default function Privacy() {
             title="Privacy Policy"
             breadcrumbs={breadcrumbs}
         />
-        <div class="container space-bottom-2 space-top-lg-1">
-            <div class="w-lg-80 w-xl-60 mx-auto collapse_custom position-relative mb-4 pb-xl-1">
-                <h4 class="font-size-16 font-weight-semi-bold text-gray-6 pb-1">Read our privacy policy terms carefully</h4>
+        <div className="container space-bottom-2 space-top-lg-1">
+            <div className="w-lg-80 w-xl-60 mx-auto collapse_custom position-relative mb-4 pb-xl-1">
+                <h4 className="font-size-16 font-weight-semi-bold text-gray-6 pb-1">Read our privacy policy terms carefully</h4>
                 <p>At our tour company, we are committed to protecting your privacy and ensuring that your personal information is handled responsibly. This Privacy Policy explains how we collect, use, and safeguard your data when you engage with our services, whether online or in person. By booking a tour with us, you consent to the practices outlined in this policy.</p>
                 <p>We collect personal information such as your name, email address, phone number, and payment details when you book a tour or sign up for our newsletters. This data is necessary to process your reservation, provide customer support, and communicate important updates regarding your tour. We may also collect non-personal data, such as browser type and usage statistics, to improve our website's functionality and user experience.</p>
                 <p>Your personal information is stored securely and will never be sold, rented, or shared with third parties for marketing purposes. However, we may share your details with trusted partners, such as local guides and transportation providers, who assist in delivering our services. These third parties are bound by confidentiality agreements and will only use your data as needed to perform their services.</p>

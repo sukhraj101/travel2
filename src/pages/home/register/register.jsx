@@ -13,38 +13,38 @@ export default function Register() {
                         <div className="row">
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="text" className="form-control" name="name" placeholder="Name" aria-label="Jack Wayley" required data-error-class="u-has-error" data-msg="Please enter your name." data-success-class="u-has-success" />
+                                    <input type="text" className="form-control" name="name" placeholder="Name" aria-label="Jack Wayley" required data-error-className="u-has-error" data-msg="Please enter your name." data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="email" className="form-control" name="email" placeholder="Email" aria-label="jackwayley@gmail.com" required data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success" />
+                                    <input type="email" className="form-control" name="email" placeholder="Email" aria-label="jackwayley@gmail.com" required data-msg="Please enter a valid email address." data-error-className="u-has-error" data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="text" className="form-control" name="name" placeholder="Bisiness Name" aria-label="Jack Wayley" required data-error-class="u-has-error" data-msg="Please enter your name." data-success-class="u-has-success" />
+                                    <input type="text" className="form-control" name="name" placeholder="Bisiness Name" aria-label="Jack Wayley" required data-error-className="u-has-error" data-msg="Please enter your name." data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="text" className="form-control" name="name" placeholder="Business Email Address" aria-label="Jack Wayley" required data-error-class="u-has-error" data-msg="Please enter your name." data-success-class="u-has-success" />
+                                    <input type="text" className="form-control" name="name" placeholder="Business Email Address" aria-label="Jack Wayley" required data-error-className="u-has-error" data-msg="Please enter your name." data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="text" className="form-control" name="name" placeholder="Location" aria-label="Jack Wayley" required data-error-class="u-has-error" data-msg="Please enter your name." data-success-class="u-has-success" />
+                                    <input type="text" className="form-control" name="name" placeholder="Location" aria-label="Jack Wayley" required data-error-className="u-has-error" data-msg="Please enter your name." data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-6 mb-5">
                                 <div className="js-form-message">
-                                    <input type="text" className="form-control" name="name" placeholder="Contact No." aria-label="Jack Wayley" required data-error-class="u-has-error" data-msg="Please enter your name." data-success-class="u-has-success" />
+                                    <input type="text" className="form-control" name="name" placeholder="Contact No." aria-label="Jack Wayley" required data-error-className="u-has-error" data-msg="Please enter your name." data-success-className="u-has-success" />
                                 </div>
                             </div>
                             <div className="col-sm-12 mb-5">
                                 <div className="js-form-message">
                                     <div className="input-group">
-                                        <textarea className="form-control" rows="6" cols="77" name="text" placeholder="Additional Busness Details" aria-label="Hi there, I would like to ..." required data-msg="Please enter a reason." data-error-class="u-has-error" data-success-class="u-has-success"></textarea>
+                                        <textarea className="form-control" rows="6" cols="77" name="text" placeholder="Additional Busness Details" aria-label="Hi there, I would like to ..." required data-msg="Please enter a reason." data-error-className="u-has-error" data-success-className="u-has-success"></textarea>
                                     </div>
                                 </div>
                             </div>
